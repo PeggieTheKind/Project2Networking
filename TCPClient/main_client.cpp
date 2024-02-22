@@ -12,6 +12,7 @@
 #include <string>
 
 #include "buffer.h"
+#include "RyansProtocol.pb.h"
 
 struct PacketHeader
 {
@@ -38,6 +39,7 @@ int main(int arg, char** argv)
 	// Initialize WinSock
 	WSADATA wsaData;
 	int result;
+	tutorial::AddressBook address_book;
 
 	// Set version 2.2 with MAKEWORD(2,2)
 	result = WSAStartup(MAKEWORD(2, 2), &wsaData);
@@ -96,6 +98,7 @@ int main(int arg, char** argv)
 		+ sizeof(message.header.packetSize);	// 4, uint32_t is 4 bytes
 	// 5 + 4 + 4 + 4 = 17
 
+	
 	const int bufSize = 512;
 	Buffer buffer(bufSize);
 
