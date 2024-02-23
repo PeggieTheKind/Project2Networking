@@ -18,9 +18,6 @@
     <ClCompile Include="main_server.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\FinalNetworkingProject\RyansProtocol.pb.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\FinalNetworkingProject\RyansProtocol.pb.h">

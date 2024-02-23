@@ -27,6 +27,12 @@ struct ChatMessage
 	std::string message;
 };
 
+struct User
+{
+	std::string UserName;
+	std::string password;
+};
+
 // Need to link Ws2_32.lib
 #pragma comment(lib, "Ws2_32.lib")
 
@@ -39,7 +45,7 @@ int main(int arg, char** argv)
 	// Initialize WinSock
 	WSADATA wsaData;
 	int result;
-	tutorial::AddressBook address_book;
+	//tutorial::AuthenticateWeb web;
 
 	// Set version 2.2 with MAKEWORD(2,2)
 	result = WSAStartup(MAKEWORD(2, 2), &wsaData);

@@ -127,7 +127,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\FinalNetworkingProject\RyansProtocol.pb.cc" />
     <ClCompile Include="main_server.cpp" />
   </ItemGroup>
   <ItemGroup>
